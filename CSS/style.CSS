@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #731bad;
+  --color-secundary: #000000;
+  --color-terciary: #ffffff;
+}
+
+body {
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  width: 400px;
+  padding: 25px;
+  background: var(--color-terciary);
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.274);
+  border-radius: 5px;
+}
+
+.container button {
+  width: 70%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: var(--color-primary);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin: 10px auto;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background: #5a018d;
+}
+
+.container p {
+  margin: 10px 0px;
+  padding: 5px;
+  font-weight: bold;
+  color: var(--color-secundary);
+}
+
+.valor-pagamento {
+  margin: 0px 0px 20px;
+  font-size: 17px;
+}
+
+.valor-pagamento label {
+  margin: 0px 10px 0px 0px;
+  color: var(--color-secundary);
+}
+
+.valor-pagamento input {
+  padding: 3px;
+  width: 200px;
+}
+
+.mod-pagamento {
+  margin: 0px 0px 20px;
+}
+
+.mod-pagamento label {
+  margin: 0px 5px 0px 0px;
+  font-size: 15px;
+  color: var(--color-secundary);
+}
+
+#pag-pix {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 10px 0px 20px 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#pag-pix h2 {
+  margin: 0px 0px 15px 0;
+  color: var(--color-secundary);
+}
+
+#pag-pix label {
+  display: flex;
+  margin: 10px 0px;
+  color: var(--color-secundary);
+}
+
+#pag-pix input {
+  width: 200px;
+  padding: 3px;
+}
+
+#pag-pix select {
+  width: 200px;
+  padding: 2px;
+}
+
+#pag-cartao {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#pag-cartao h2 {
+  margin: 0px 0px 15px 0px;
+  color: var(--color-secundary);
+}
+
+#pag-cartao label {
+  margin: 2px 0px;
+  font-size: 15px;
+  color: var(--color-secundary);
+}
+
+#pag-cartao input {
+  padding: 2px;
+  width: 80%;
+  margin: 5px 0;
+}
+
+#pag-cartao select {
+  width: 20%;
+  padding: 3px;
+}
+
+#pag-cartao span img  {
+   width: 50px ;
+   width: 50px;
+}
+
+.painel {
+   display: none;
+}

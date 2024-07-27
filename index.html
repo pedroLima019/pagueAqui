@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.CSS" />
+    <!-- JS -->
+    <script defer src="/JS/script.JS"></script>
+    <title>PagueAqui</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="valor-pagamento">
+        <label for="valor">Valor Pagamento:</label>
+        <input type="text" id="valor" name="valor" />
+      </div>
+
+      <div class="mod-pagamento">
+        <input type="radio" id="pix" name="pagamento" />
+        <label for="pix">Pix</label>
+        <input type="radio" id="cartao" name="pagamento" />
+        <label for="cartao">Cartão de Crédito</label>
+      </div>
+
+      <button type="button" id="informarDados">informar Dados</button>
+
+      <div class="painel" id="pag-pix">
+        <h2>Area Pix</h2>
+        <label for="chave">Tipo Chave:</label>
+        <select name="chave" id="chave">
+          <option value="cpf">CPF</option>
+          <option value="chaveAleatoria">Chave Aleatoria</option>
+          <option value="email">E-mail</option>
+        </select>
+        <label for="Chave">Chave:</label>
+        <input type="text" id="chave" placeholder="Digite a chave selecionada">
+      </div>
+
+      <div class="painel" id="pag-cartao">
+        <h2>Cartão de Crédito</h2>
+
+        <label for="numero">Número Cartão:</label>
+        <input type="text" id="numero" name="nome" />
+        <span id="bandIcon"></span>
+
+        <label for="titular">Titular:</label>
+        <input type="text" id="titular" name="titular" />
+
+        <label for="codigoSeg">Cód. Segurança:</label>
+        <input type="text" id="codigoSeg" name="codigoSeg" />
+
+        <label for="vencimento">Vencimento:</label>
+        <input type="text" id="vencimento" name="vencimento" />
+
+        <label for="parcelas">Parcelas:</label>
+        <select name="parcelas" id="parcelas">
+          <option value="1x">1x</option>
+          <option value="2x">2x</option>
+          <option value="3x">3x</option>
+          <option value="4x">4x</option>
+          <option value="5x">5x</option>
+        </select>
+      </div>
+
+      <p>Total: <span id="total"></span></p>
+      <p id="parcelasValores"></p>
+      <button type="button" id="pagar">Pagar</button>
+    </div>
+  </body>
+</html>
